@@ -7,7 +7,7 @@ export class HerokuDynamicControlPage {
   readonly inputButton: Locator;
   readonly inputEle: Locator;
 
-  constructor(page) {
+  constructor(page: Page) {
     this.page = page;
     this.checkboxButton = this.page.locator("#checkbox-example > button");
     this.checkboxEle = this.page.locator("#checkbox");
