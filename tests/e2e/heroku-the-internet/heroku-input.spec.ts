@@ -1,6 +1,6 @@
 import test from "@playwright/test";
-import { HerokuInputPage } from "../page-objects/HerokuInputPage";
-import { HerokuPage } from "../page-objects/HerokuPage";
+import { HerokuInputPage } from "../../../page-objects/heroku-the-internet/HerokuInputPage";
+import { HerokuPage } from "../../../page-objects/heroku-the-internet/HerokuPage";
 
 
 test.describe("Heroku input cases",()=>{

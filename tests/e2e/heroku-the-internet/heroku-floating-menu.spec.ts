@@ -1,6 +1,6 @@
 import test from "@playwright/test";
-import { HerokuFloatingMenuPage } from "../page-objects/HerokuFloatingMenuPage";
-import { HerokuPage } from "../page-objects/HerokuPage";
+import { HerokuFloatingMenuPage } from "../../../page-objects/heroku-the-internet/HerokuFloatingMenuPage";
+import { HerokuPage } from "../../../page-objects/heroku-the-internet/HerokuPage";
 
 test.describe('Floating Menu check', ()=>{
     let herokuPage:HerokuPage

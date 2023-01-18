@@ -1,6 +1,6 @@
 import { Page, test, expect } from "@playwright/test";
-import { HerokuBasicAuthPage } from "../page-objects/HerokuBasicAuthPage";
-import { HerokuPage } from "../page-objects/HerokuPage";
+import { HerokuBasicAuthPage } from "../../../page-objects/heroku-the-internet/HerokuBasicAuthPage";
+import { HerokuPage } from "../../../page-objects/heroku-the-internet/HerokuPage";
 
 test.describe("Basic Auth check", () => {
   let herokuPage: HerokuPage;

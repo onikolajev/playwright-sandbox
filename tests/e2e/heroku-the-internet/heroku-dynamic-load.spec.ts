@@ -1,6 +1,6 @@
 import {test, Page} from "@playwright/test";
-import { HerokuDynamicalLoadPage } from "../page-objects/HerokuDynamicLoadPage";
-import { HerokuPage } from "../page-objects/HerokuPage";
+import { HerokuDynamicalLoadPage } from "../../../page-objects/heroku-the-internet/HerokuDynamicLoadPage";
+import { HerokuPage } from "../../../page-objects/heroku-the-internet/HerokuPage";
 
 test.describe("Dynamic Order check", ()=>{
     let herokuapp: HerokuPage

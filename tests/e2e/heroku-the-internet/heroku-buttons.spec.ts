@@ -1,6 +1,6 @@
 import test from "@playwright/test";
-import { HerokuAddElement } from "../page-objects/HerokuAddElementPage";
-import { HerokuPage } from "../page-objects/HerokuPage";
+import { HerokuAddElement } from "../../../page-objects/heroku-the-internet/HerokuAddElementPage";
+import { HerokuPage } from "../../../page-objects/heroku-the-internet/HerokuPage";
 
 test.describe("Check Add/Delete buttons", () => {
   let herokuPage: HerokuPage;

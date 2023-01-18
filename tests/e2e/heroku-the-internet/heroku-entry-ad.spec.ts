@@ -1,6 +1,6 @@
 import test from "@playwright/test";
-import { HerokuEntryAdPage } from "../page-objects/HerokuEntryAdPage";
-import { HerokuPage } from "../page-objects/HerokuPage";
+import { HerokuEntryAdPage } from "../../../page-objects/heroku-the-internet/HerokuEntryAdPage";
+import { HerokuPage } from "../../../page-objects/heroku-the-internet/HerokuPage";
 
 test.describe("Check Entry Add", ()=>{
     let herokuPage: HerokuPage

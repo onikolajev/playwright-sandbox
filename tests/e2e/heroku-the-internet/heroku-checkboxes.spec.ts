@@ -1,6 +1,6 @@
 import test from "@playwright/test";
-import { HerokuCheckboxes } from "../page-objects/HerokuCheckboxes";
-import { HerokuPage } from "../page-objects/HerokuPage";
+import { HerokuCheckboxes } from "../../../page-objects/heroku-the-internet/HerokuCheckboxes";
+import { HerokuPage } from "../../../page-objects/heroku-the-internet/HerokuPage";
 
 test.describe("Heroku checkboxes", () => {
   let herokuPage: HerokuPage;

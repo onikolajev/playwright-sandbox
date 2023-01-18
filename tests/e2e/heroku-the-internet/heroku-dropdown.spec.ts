@@ -1,6 +1,6 @@
 import test from "@playwright/test";
-import { HerokuDropdownPage } from "../page-objects/HerokuDropdownPage";
-import { HerokuPage } from "../page-objects/HerokuPage";
+import { HerokuDropdownPage } from "../../../page-objects/heroku-the-internet/HerokuDropdownPage";
+import { HerokuPage } from "../../../page-objects//heroku-the-internet/HerokuPage";
 
 test.describe("Dropbox check", ()=>{
     let herokuPage: HerokuPage

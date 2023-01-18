@@ -1,6 +1,6 @@
 import { test, Page } from "@playwright/test";
-import { HerokuPage } from "../page-objects/HerokuPage";
-import { HerokuDynamicControlPage } from "../page-objects/HerokuDynamicControlsPage";
+import { HerokuPage } from "../../../page-objects/heroku-the-internet/HerokuPage";
+import { HerokuDynamicControlPage } from "../../../page-objects/heroku-the-internet/HerokuDynamicControlsPage";
 
 test.describe("Check Dynamical Controls page", () => {
   let page: Page;
