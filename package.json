@@ -1,12 +1,14 @@
 {
-  "name": "playwright-for-deletion",
+  "name": "playwright-sandbox",
   "version": "1.0.0",
-  "description": "",
+  "description": "Oleg is playing arround with playwright in his own sandbox",
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test",
+    "test:update-snapshots": "npx playwright test --update-snapshots",
     "test:debug": "npx playwright test --debug",
-    "test:visual": "npx playwright test --config=visual.config.ts"
+    "test:visual": "npx playwright test --config=visual.config.ts",
+    "test:visual:update-snapshots": "npx playwright test --config=visual.config.ts --update-snapshots"
   },
   "keywords": [],
   "author": "",

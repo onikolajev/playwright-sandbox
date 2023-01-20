@@ -21,4 +21,9 @@ export class HerokuPage{
         let headerElem = await this.page.locator('#content h3')
         await expect(headerElem).toHaveText(sectionTitle)
     }
+
+    async snapshotAssert() {
+        let homePageSnapshot = await this.page.screenshot();
+        await expect(homePageSnapshot).toMatchSnapshot('heroku-home-page.png')
+    }
 }
