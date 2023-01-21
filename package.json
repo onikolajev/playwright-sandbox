@@ -5,11 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test",
-    "test:update-snapshots": "npx playwright test --update-snapshots",
     "test:debug": "npx playwright test --debug",
-    "test:visual": "npx playwright test --config=visual.config.ts",
+    "test:visual": "npx playwright test --config=visual.config.ts --reporter=list",
     "test:visual:update-snapshots": "npx playwright test --config=visual.config.ts --update-snapshots",
-    "test:api": "npx playwright test --config=api.config.ts",
+    "test:api": "npx playwright test --config=api.config.ts --reporter=list",
     "test:show-report": "npx playwright show-report"
   },
   "keywords": [],
