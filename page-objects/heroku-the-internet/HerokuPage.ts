@@ -12,7 +12,7 @@ export class HerokuPage{
     }
 
     async selectSection(sectionTitle: string){
-        let elem = await this.page.locator(`#content li a:has-text("${sectionTitle}")`)
+        let elem = await this.page.locator(`#content li a:text("${sectionTitle}")`)
         await elem.click()
     }
 
