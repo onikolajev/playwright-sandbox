@@ -20,12 +20,12 @@ test.describe("Test heroku the-internet homepage", async () => {
     "Dynamic Loading",
     "Entry Ad",
     "Exit Intent",
-    // "File Download", to be fixed later
+    "File Download",
     "File Upload",
     "Floating Menu",
     "Forgot Password",
     "Form Authentication",
-    // "Frames", to be fixed later
+    "Frames",
     "Geolocation",
     "Horizontal Slider",
     "Hovers",
@@ -59,6 +59,7 @@ test.describe("Test heroku the-internet homepage", async () => {
   for (const section of sections) {
     test(`Open homepage and check ${section}`, async ({ page }) => {
       await herokuPage.selectSection(section);
+    //   await page.getByTe
     });
   }
 });

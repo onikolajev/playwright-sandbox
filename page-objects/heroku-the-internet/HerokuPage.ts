@@ -12,7 +12,8 @@ export class HerokuPage{
     }
 
     async selectSection(sectionTitle: string){
-        let elem = await this.page.locator(`#content li a:text("${sectionTitle}")`)
+        // let elem = await this.page.locator(`#content li a:text("${sectionTitle}")`)
+        let elem = await this.page.getByText(sectionTitle, {exact: true})
         await elem.click()
     }
 
