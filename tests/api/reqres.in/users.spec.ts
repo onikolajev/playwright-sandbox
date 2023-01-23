@@ -4,7 +4,7 @@ import {
   getUser,
   consoleLogResponse,
   createUser,
-} from "../../../reqres-api-helpers";
+} from "../../../utils/reqres-api-helpers";
 
 test.describe.parallel("API testing > https://reqres.in/", () => {
   let url = "https://reqres.in/api";

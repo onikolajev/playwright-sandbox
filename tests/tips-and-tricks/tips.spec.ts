@@ -1,5 +1,6 @@
 import {expect, test} from '@playwright/test'
 import { HerokuPage } from '../../page-objects/heroku-the-internet/HerokuPage'
+import {getRandomNumber, getRandomString} from '../../utils/data-helpers'
 
 
 test.describe('Tips & tricks', ()=>{
@@ -63,8 +64,8 @@ test.describe('Tips & tricks', ()=>{
     // npx playwright pdf wikipedia.org my-file.pdf
     
     
-    
-    test.only('List texts of all similar elements', async ({page})=>{
+    // will spam the consoloe log
+    test.skip('List texts of all similar elements', async ({page})=>{
         let herokuPage = new HerokuPage(page)
         await herokuPage.open()
 
@@ -77,5 +78,19 @@ test.describe('Tips & tricks', ()=>{
         }
     })
 
+
+
+    // Custom screenshots
+    // npx playwright screenshot --device="iPhone 11" --color-scheme=dark --wait-for-timeout=3000 twitter.com twitter-iphone-image.png
     
+
+
+    // Custom timezone
+    // npx playwright open --timezone="Europe/Rome" --lang="it-IT" google.com
+
+    
+    test.skip('Check function helpers for generating data',async ({page}) => {
+        console.log(await getRandomNumber())
+        console.log(await getRandomString())
+    })
 })
